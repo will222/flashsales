@@ -22,6 +22,10 @@ public class SwaggerConfig {
     @Value("${swagger.switch}")
     private boolean swaggerSwitch;
 
+    /**
+     * http://localhost:8080/swagger-ui.html#
+     * @return
+     */
     @Bean
     public Docket api() {
         Docket docket = new Docket(DocumentationType.SWAGGER_2);
